@@ -1,11 +1,6 @@
-html {
-    height: 100;
-}
-
 body {
     background: linear-gradient(180deg, #0E1647 0%, #0A1033 100%);
-    width: 80vw;
-    height: 100vh;
+    width: 75vw;
     margin: 50px auto;
 }
 
@@ -167,6 +162,12 @@ a {
 }
 
 .signUp {}
+
+@media (min-width: 1020px) {
+    html {
+        height: 100vh;
+    }
+}
 
 /* @media (min-width: 651px) and (max-width: 1024px) { */
 @media (max-width: 1024px) {
