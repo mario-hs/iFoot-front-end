@@ -1,0 +1,133 @@
+html {
+    height: 100vh;
+}
+
+body {
+    background: linear-gradient(180deg, #0E1647 0%, #0A1033 100%);
+    width: 80vw;
+    margin: 50px auto;
+}
+
+header {
+    width: 390px;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+p {
+    color: var(--light-white);
+    font-weight: 300;
+}
+
+header img {
+    margin: auto 15px;
+    width: 50px;
+    height: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.right {
+    width: 480px;
+    height: 480px;
+    background: linear-gradient(180deg, #1D2766 0%, #171F52 100%);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 80px 30px;
+    justify-content: center;
+}
+
+.right h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+.right p {
+    margin-bottom: 20px;
+    text-align: center;
+    color: var(--middle-white);
+    font-size: 0.9rem;
+    line-height: 1.6rem;
+}
+
+.right a {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+
+}
+
+.right a input {
+    background: none;
+    border: none;
+    color: var(--light-white);
+    height: 100%;
+    padding-left: 20px;
+}
+
+a {
+    text-align: left;
+}
+
+.right .google input {
+    color: #29292E;
+    /* border-left: solid 2px #A8A8B3; */
+}
+
+.right .google {
+    background-color: var(--light-white);
+    border: solid 2px #A8A8B3;
+}
+
+.right .google img {
+    margin-left: 13px;
+    /* margin-right: 15px; */
+}
+
+.right .sign-in {
+    background-color: var(--red);
+}
+
+.right .sign-in img {
+    padding: 2px 2px 2px 0px;
+}
+
+.right .sign-up {
+    border: solid 2px var(--light-blue);
+    background-color: #171F52;
+}
+
+.right .sign-in input {
+    border-left: solid 2px var(--dark-red);
+}
+
+.right .sign-up input {
+    border-left: solid 2px var(--light-blue);
+}
+
+.left {
+    width: 390px;
+}
+
+.left p {
+    font-family: 'Rajdhani';
+    font-size: 1.4rem;
+    text-align: center;
+}
