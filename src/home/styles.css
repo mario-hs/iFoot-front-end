@@ -135,6 +135,39 @@ a {
     line-height: 2.4rem;
 }
 
+.signIn,
+.signUp {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    display: flex;
+}
+
+.signIn:target,
+.signUp:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-singIn {
+    width: 480px;
+    height: 400px;
+
+    margin: auto;
+
+    background: linear-gradient(180deg, #1D2766 0%, #171F52 100%);
+    border-radius: 8px;
+}
+
+.signUp {}
+
 /* @media (min-width: 651px) and (max-width: 1024px) { */
 @media (max-width: 1024px) {
     header {

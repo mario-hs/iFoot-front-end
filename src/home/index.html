@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="./styles.css">
     <title>iFoot - Todo dia é dia de pelada</title>
+
+    <script src="https://unpkg.com/phosphor-icons"></script>
 </head>
 
 <body>
@@ -27,15 +29,53 @@
             </h2>
 
             <p>Crie grupos para jogar suas peladas <br> reserve campo sem dificuldade</p>
-            <a class="google"><img src="../assets/icon/google.svg" alt="icone do Google"> <input type="button"
+            <a href="#" class="google"><img src="../assets/icon/google.svg" alt="icone do Google"> <input type="button"
                     value="Crie sua conta com o Google"></a>
-            <a class="sign-in"><img src="../assets/icon/apito-red.svg" alt="icone de um apito"><input type="button"
-                    value="Já tenho conta"></button>
-                <a class="sign-up"><img src="../assets/icon/apito-blue.svg" alt="icone de um apito"><input type="button"
-                        value="Criar conta"></a>
+            <a href="#singIn" class="sign-in"><img src="../assets/icon/apito-red.svg" alt="icone de um apito"><input
+                    type="button" value="Já tenho conta"></a>
+            <a href="#signUp" class="sign-up"><img src="../assets/icon/apito-blue.svg" alt="icone de um apito"><input
+                    type="button" value="Criar conta"></a>
+
         </section>
     </main>
 
+
+    <!-- MODAIS -->
+    <div id="singIn" class="signIn">
+        <div class="modal-singIn">
+            <a href="#close" title="Close" class="Close"><i class="ph-x"></i></a>
+            <img src="../assets/icon/apito.svg" alt="iFoot">
+            <h1>iFoot</h1>
+            <div>
+                <label for="user">Nome: </label>
+                <input type="text" name="user" id="user" placeholder="Digite o nome do seu usuário">
+            </div>
+            <div>
+                <label for="password">Senha: </label>
+                <input type="password" name="password" id="password" placeholder="Digite sua senha">
+            </div>
+            <input type="button" value="Entrar">
+            <input type="button" value="Sair">
+        </div>
+    </div>
+
+    <div id="signUp" class="signUp">
+        <div class="modal-signIn">
+            <a href="#close" title="Close" class="Close"><i class="ph-arrow-left"></i></a>
+            <img src="../assets/icon/apito.svg" alt="iFoot">
+            <h1>iFoot</h1>
+            <p>Você é?</p>
+            <div>
+                <label for="field">Campo</label>
+                <input type="checkbox" name="field" id="field">
+            </div>
+
+            <div>
+                <label for="player">Jogador</label>
+                <input type="checkbox" name="player" id="player">
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
