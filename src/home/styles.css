@@ -1,7 +1,10 @@
 body {
     background: linear-gradient(180deg, #0E1647 0%, #0A1033 100%);
-    width: 75vw;
-    margin: 50px auto;
+    width: 70vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header {
@@ -151,14 +154,96 @@ a {
     pointer-events: auto;
 }
 
-.modal-singIn {
+.modal {
     width: 480px;
-    height: 400px;
+    height: 430px;
 
     margin: auto;
+    padding: 30px 40px;
 
     background: linear-gradient(180deg, #1D2766 0%, #171F52 100%);
     border-radius: 8px;
+}
+
+.modal .label_input {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal .label_input label {
+    margin-bottom: 5px;
+}
+
+.modal .label_input input {
+    height: 45px;
+    border: solid 2px var(--blue);
+    border-radius: 8px;
+    padding: 5px 15px;
+    margin-bottom: 25px;
+    color: var(--middle-whi);
+}
+
+.modal a {
+    display: block;
+    text-align: end;
+    color: var(--light-white);
+}
+
+.modal .ifoot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.modal img {
+    width: 40px;
+}
+
+.modal h1 {
+    font-size: 24px;
+}
+
+.modal .button {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .modal input[type=button], */
+.modal .button a {
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    width: 45%;
+    height: 45px;
+    border-radius: 8px;
+    color: var(--middle-white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.confirm {
+    background-color: var(--red);
+    border: solid 2px var(--red);
+}
+
+.close {
+    border: solid 2px var(--light-blue);
+    background: none;
+}
+
+.confirm:hover {
+    transition: 0.2s;
+    background: var(--dark-red);
+    border: var(--dark-red);
+}
+
+.close:hover {
+    transition: 0.2s;
+    background: var(--light-blue);
 }
 
 .signUp {}
@@ -169,7 +254,6 @@ a {
     }
 }
 
-/* @media (min-width: 651px) and (max-width: 1024px) { */
 @media (max-width: 1024px) {
     header {
         width: 100%;
@@ -214,8 +298,11 @@ a {
     }
 }
 
-/* @media (min-width: 376px) and (max-width: 650px) { */
 @media (max-width: 650px) {
+    body {
+        width: 90vw;
+    }
+
     header {
         margin: 0px auto 20px;
     }

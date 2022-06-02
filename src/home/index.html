@@ -42,28 +42,36 @@
 
     <!-- MODAIS -->
     <div id="singIn" class="signIn">
-        <div class="modal-singIn">
+        <div class="modal">
             <a href="#close" title="Close" class="Close"><i class="ph-x"></i></a>
-            <img src="../assets/icon/apito.svg" alt="iFoot">
-            <h1>iFoot</h1>
-            <div>
+            <div class="ifoot">
+                <img src="../assets/icon/apito.svg" alt="iFoot">
+                <h1>iFoot</h1>
+            </div>
+            <div class="label_input">
                 <label for="user">Nome: </label>
                 <input type="text" name="user" id="user" placeholder="Digite o nome do seu usuário">
             </div>
-            <div>
+            <div class="label_input">
                 <label for="password">Senha: </label>
                 <input type="password" name="password" id="password" placeholder="Digite sua senha">
             </div>
-            <input type="button" value="Entrar">
-            <input type="button" value="Sair">
+            <div class="button">
+                <!-- <input type="button" class="confirm" value="Entrar"> -->
+                <a href="#close" class="confirm" title="Login">Entrar</a>
+                <a href="#close" class="close" title="Close">Sair</a>
+                <!-- <input type="button" class="close" value="Sair"> -->
+            </div>
         </div>
     </div>
 
     <div id="signUp" class="signUp">
-        <div class="modal-signIn">
-            <a href="#close" title="Close" class="Close"><i class="ph-arrow-left"></i></a>
-            <img src="../assets/icon/apito.svg" alt="iFoot">
-            <h1>iFoot</h1>
+        <div class="modal">
+            <a href="#close" title="Close" class="Close"><i class="ph-x"></i></i></a>
+            <div class="ifoot">
+                <img src="../assets/icon/apito.svg" alt="iFoot">
+                <h1>iFoot</h1>
+            </div>
             <p>Você é?</p>
             <div>
                 <label for="field">Campo</label>
