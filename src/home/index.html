@@ -41,7 +41,7 @@
 
 
     <!-- MODAIS -->
-    <div id="singIn" class="signIn">
+    <form action="POST" id="singIn" class="signIn">
         <div class="modal">
             <a href="#close" title="Close" class="Close"><i class="ph-x"></i></a>
             <div class="ifoot">
@@ -63,9 +63,9 @@
                 <!-- <input type="button" class="close" value="Sair"> -->
             </div>
         </div>
-    </div>
+    </form>
 
-    <div id="signUp" class="signUp">
+    <section id="signUp" class="signUp">
         <div class="modal">
             <a href="#close" title="Close" class="Close"><i class="ph-x"></i></i></a>
             <div class="ifoot">
@@ -73,17 +73,25 @@
                 <h1>iFoot</h1>
             </div>
             <p>Você é?</p>
-            <div>
-                <label for="field">Campo</label>
-                <input type="radio" name="option" id="field">
-            </div>
+            <div class="wrapper">
+                <div class="group-option">
+                    <label for="field">Campo</label>
+                    <input type="radio" class="option" name="option" id="field">
+                </div>
 
-            <div>
-                <label for="player">Jogador</label>
-                <input type="radio" name="option" id="player">
+                <div class="group-option">
+                    <label for="player">Jogador</label>
+                    <input type="radio" class="option" name="option" id="player">
+                </div>
+            </div>
+            <div class="button">
+                <!-- <input type="button" class="confirm" value="Entrar"> -->
+                <a href="#close" class="confirm" title="Login">Confirmar</a>
+                <!-- <a href="#close" class="close" title="Close">Sair</a> -->
+                <!-- <input type="button" class="close" value="Sair"> -->
             </div>
         </div>
-    </div>
+    </section>
 </body>
 
 </html>

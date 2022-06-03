@@ -247,7 +247,37 @@ a {
     background: var(--light-blue);
 }
 
-.signUp {}
+.wrapper {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.group-option {
+    height: 70px;
+    width: 110px;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #243189;
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.wrapper .group-option label {
+    margin: auto;
+}
+
+.signUp .modal {
+    height: 350px;
+}
+
+.signUp .modal .button {
+    justify-content: center;
+}
 
 @media (min-width: 1020px) {
     html {
